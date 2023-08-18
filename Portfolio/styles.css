@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #061e2f;
+    color: rgb(220, 238, 255);
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 10%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 100;
+    background-color: #061e2f;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 600;
+    text-decoration: none;
+    color: rgb(220, 238, 255);
+}
+
+.navbar a{
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 35px;
+    text-decoration: none;
+    transition: .3s;
+    color: rgb(220, 238, 255);
+}
+
+.navbar a:hover, .navbar .active{
+    color: aqua;
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+}
+
+.home-img img{
+    height: 300px;
+    border-radius: 50%;
+
+}
+
+.home-content{
+    max-width: 600px;
+    margin-right: 100px;
+    animation-name: content;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+
+@keyframes content{
+    0%{color: #061e2f;}
+    100%{color: rgb(220, 238, 255);}
+}
+
+.home-content h1{
+    font-size: 50px;
+    font-weight: 800px;
+}
+
+.home-content p{
+    font-size: 16px;
+}
+
+.skills{
+    height: 50vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.skill-head{
+    font-size: 30px;
+}
+.skill-list{
+    width: auto;
+    margin-left: 100px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.html,.css,.js,.python,.java,.php,
+.node,.db,.react,.npm{
+    height: 100px;
+    width: 100px;
+    font-size: 50px;
+    text-align: center;
+    margin: 20px;
+    margin-right: 0px;
+    opacity: 0.7;
+}
+
+.html:hover,.css:hover,.js:hover,.python:hover,.java:hover,
+.php:hover,.node:hover,.db:hover,.react:hover,.npm:hover{
+    opacity: 1;
+}
+
+.proficiency{
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.name{
+    font-size: 30px;
+    margin-left: 155px;
+}
+
+
+.details{
+    width: 100%;
+    display: flex;  
+    justify-content: space-between;
+    padding-top: 10px;
+    width: 600px;
+}
+.bar{
+    position: relative;
+    border: 2px solid #0d96e0;
+    border-radius: 20px;
+}
+.bar div{
+    position: relative;
+    width: 0;
+    height: 9px;
+    border-radius: 10px;
+    background-color: #0d96e0;
+}
+
+.bar div:hover{
+    opacity: 0.8;
+}
+
+#frontend-bar{
+    animation: frontend-fill 2s forwards;
+}
+@keyframes frontend-fill{
+    100%{
+        width: 85%;
+    }
+}
+#prog-bar{
+    animation: prog-fill 2s forwards;
+}
+@keyframes prog-fill{
+    100%{
+        width: 78%;
+    }
+}
+#dbms-bar{
+    animation: dbms-fill 2s forwards;
+}
+@keyframes dbms-fill {
+    100%{
+        width: 70%;
+    }
+}
+#backend-bar{
+    animation: backend-fill 2s forwards;
+}
+@keyframes backend-fill{
+    100%{
+        width: 65%;
+    }
+}
+
+.my-projects{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    width: 100%;
+    padding: 20px 10%;
+}
+
+.proj-head{
+    font-size: 30px;
+}
+
+.projects{
+    max-width: 800px;
+}
+
+.projects a{
+    text-decoration: none;
+    color: rgb(220, 238, 255);
+}
+
+
+.task-manager:hover, .crm-django:hover, .stock-prediction:hover{
+    background-color: #c4e3f4;
+    color: #061e2f;
+    border-radius: 10px;
+}
+
+.stock-prediction,.crm-django,.task-manager{
+    text-align: justify;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.stock-prediction p,.crm-django p,.task-manager p{
+    padding-top: 5px;
+}
+
+.crm-django{
+    margin-left: 70px;
+}
+
+.resume{
+    display: flex;
+    padding: 0px 10%;
+    align-items: center;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.buttons{
+    display: flex;
+    width: 550px;
+    flex-direction: row;
+    align-items: center;
+    height: 50vh;
+    justify-content: space-between;
+}
+
+
+.btn{
+    width: 200px;
+    height: 70px;
+    background-color: transparent;
+    border: solid;
+    font-size: 18px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.view{
+    border-color: #0d96e0;
+    color: #0d96e0;
+
+}
+
+.download{
+    background-color: #0d96e0;
+    color: #061e2f;
+}
+
+.view:hover{
+    background-color: #0d96e0;
+    color: #061e2f;
+    cursor: pointer;
+}
+
+.download:hover{
+    background-color: transparent;
+    color: #0d96e0;
+    cursor: pointer;
+}
+
+.resume-header{
+    margin-left: 300px;
+    font-size: 30px;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+}
+
+.icons{
+    display: flex;
+    flex-direction: row;
+}
+
+.linkedin,.facebook,.instagram,.gmail,.phone{
+    padding: 0;
+    font-size: 60px;
+    text-align: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.contact a{
+    color: #c4e3f4;
+}
+
+.contact i{
+    transition: all 0.3s linear;
+}
+
+.contact a:hover i{
+    transform: scale(1.4);
+}
+
